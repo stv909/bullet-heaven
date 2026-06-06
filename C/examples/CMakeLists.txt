@@ -38,8 +38,8 @@ endif (EMSCRIPTEN)
 add_subdirectory(.. glfw3webgpu)
 
 # Example
-add_executable(hello-glfw3webgpu hello-glfw3webgpu.c)
-target_link_libraries(hello-glfw3webgpu PRIVATE glfw webgpu glfw3webgpu)
-set_target_properties(hello-glfw3webgpu PROPERTIES CXX_STANDARD 17)
-target_treat_all_warnings_as_errors(hello-glfw3webgpu)
-target_copy_webgpu_binaries(hello-glfw3webgpu)
+add_executable(bullet-heaven main.c)
+target_link_libraries(bullet-heaven PRIVATE glfw webgpu glfw3webgpu)
+set_target_properties(bullet-heaven PROPERTIES CXX_STANDARD 17)
+target_treat_all_warnings_as_errors(bullet-heaven)
+target_copy_webgpu_binaries(bullet-heaven)
