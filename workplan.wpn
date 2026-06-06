@@ -9,32 +9,39 @@
 + выбрать LLM для помоци в разработке
 	url * https://platform.deepseek.com/
 + настроить LLM для IDE
-    * в настройках языковых моделей нужно было прописать
-    * API KEY от DeepSeek и нажать Enter (что неочевидно)
+	* в настройках языковых моделей нужно было прописать
+	* API KEY от DeepSeek и нажать Enter (что неочевидно)
 + написать предварительный список языков программирования
-    * на которых планируется реализовывать проект
-    1 * C
-    2 * Zig
-    3 * Go
-    4 * Rust
-    5 * Odin
-    6 * V
-    7 * Julia
-. стартовать разработку на C
-    + выбрать компилятор и билд систему
-        * попробуем классический CMake и кроссплатформенный CLang
-    + убедиться что CLang уже есть
-        bash * clang -v
-        * он идёт в базовой поставке для MacOS
-    + установить CMake
-        url * https://cmake.org/download/
-        * и прописать путь к cmake
-        file * ~/.zshrc
-        bash * export PATH="/Applications/CMake.app/Contents/bin:$PATH"
-    + сбилдить тестовый проект
-        bash * cmake -B build -DCMAKE_C_COMPILER=clang
-        bash * cmake --build build
-        bash * ./build/bullet-heaven
-        * всё получилось и результат запустился
-    . залить изменения
-        * при этом заигнорить сгенерированные бинари в ./build
+	* на которых планируется реализовывать проект
+	1 * C
+	2 * Zig
+	3 * Go
+	4 * Rust
+	5 * Odin
+	6 * V
+	7 * Julia
++ стартовать разработку на C
+	+ выбрать компилятор и билд систему
+		* попробуем классический CMake и кроссплатформенный CLang
+	+ убедиться что CLang уже есть
+		bash * clang -v
+		* он идёт в базовой поставке для MacOS
+	+ установить CMake
+		url * https://cmake.org/download/
+		* и прописать путь к cmake
+		file * ~/.zshrc
+		bash * export PATH="/Applications/CMake.app/Contents/bin:$PATH"
+	+ сбилдить тестовый проект
+		bash * cmake -B build -DCMAKE_C_COMPILER=clang
+		bash * cmake --build build
+		bash * ./build/bullet-heaven
+		* всё получилось и результат запустился
+	+ залить изменения
+		* при этом заигнорить сгенерированные бинари в ./build
+	+ научиться запускать приложение под отладкой
+		url * https://zed.dev/docs/languages/c#debugging
+		+ выбрать отладчик
+			* CodeLLDB
+		+ написать скрипт для запуска под отладкой
+			* и заодно разобрался в интерфейсе отладчика
+. написать минимальное приложение с использованием WebGPU
