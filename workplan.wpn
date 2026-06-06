@@ -54,3 +54,8 @@
 			path * brew install wgpu-native
 			* так и не заработало - встрял в ошибки с либами
 	. найти готовые примеры и попробовать их скомпилить
+		+ просто GLFW без WebGPU
+			url * https://github.com/iiiypuk/glfw-examples/blob/master/rotate_cube/rotate_cube.c
+			* изначально это проект под винду, и с рендером на OpenGL
+			* но главное он использует GLFW - это нам и надо, в итоге удалось собрать и запустить.
+		. одновременно GLFW и WebGPU
