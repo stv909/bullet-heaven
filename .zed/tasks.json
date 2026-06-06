@@ -23,4 +23,20 @@
 		"allow_concurrent_runs": false,
 		"reveal": "always",
 	},
+	{
+		"label": "glfw3webgpu - Build & Run (Debug)",
+		"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/hello-glfw3webgpu",
+		"cwd": "$ZED_WORKTREE_ROOT/glfw3webgpu/examples",
+		"shell": "system",
+		"allow_concurrent_runs": false,
+		"reveal": "always",
+	},
+	{
+		"label": "hello-triangle -Build & Run (Debug)",
+		"command": "cmake -B build && cmake --build build && ./build/App",
+		"cwd": "$ZED_WORKTREE_ROOT/hello-triangle",
+		"shell": "system",
+		"allow_concurrent_runs": false,
+		"reveal": "always",
+	},
 ]

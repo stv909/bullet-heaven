@@ -15,4 +15,16 @@
 		"request": "launch",
 		"adapter": "CodeLLDB",
 	},
+	{
+		"label": "glfw3webgpu - Debug",
+		"program": "$ZED_WORKTREE_ROOT/glfw3webgpu/examples/build/debug/hello-glfw3webgpu",
+		"request": "launch",
+		"adapter": "CodeLLDB",
+	},
+	{
+		"label": "hello-triangle - Debug",
+		"program": "$ZED_WORKTREE_ROOT/hello-triangle/build/App",
+		"request": "launch",
+		"adapter": "CodeLLDB",
+	},
 ]
