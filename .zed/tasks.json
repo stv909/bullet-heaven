@@ -2,7 +2,7 @@
 	{
 		"label": "C - Build & Run (Debug)",
 		"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
-		"cwd": "$ZED_WORKTREE_ROOT/C/examples",
+		"cwd": "$ZED_WORKTREE_ROOT/C",
 		"shell": "system",
 		"allow_concurrent_runs": false,
 		"reveal": "always",
