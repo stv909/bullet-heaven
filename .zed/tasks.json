@@ -1,16 +1,16 @@
 [
 	{
-		"label": "C - Build & Run (Debug)",
+		"label": "glwf3opengl - Build & Run (Debug)",
 		"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
-		"cwd": "$ZED_WORKTREE_ROOT/C",
+		"cwd": "$ZED_WORKTREE_ROOT/glwf3opengl",
 		"shell": "system",
 		"allow_concurrent_runs": false,
 		"reveal": "always",
 	},
 	{
-		"label": "C -Build & Run (Release)",
+		"label": "glwf3opengl -Build & Run (Release)",
 		"command": "cmake -B build/release -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=clang && cmake --build build/release && ./build/release/bullet-heaven",
-		"cwd": "$ZED_WORKTREE_ROOT/C",
+		"cwd": "$ZED_WORKTREE_ROOT/glwf3opengl",
 		"shell": "system",
 		"allow_concurrent_runs": false,
 		"reveal": "always",

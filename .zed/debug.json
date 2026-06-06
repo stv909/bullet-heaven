@@ -4,8 +4,8 @@
 // see: https://zed.dev/docs/debugger
 [
 	{
-		"label": "C - Debug",
-		"program": "$ZED_WORKTREE_ROOT/C/build/debug/bullet-heaven",
+		"label": "glwf3opengl` - Debug",
+		"program": "$ZED_WORKTREE_ROOT/glwf3opengl/build/debug/bullet-heaven",
 		"request": "launch",
 		"adapter": "CodeLLDB",
 	},

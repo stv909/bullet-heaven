@@ -11,7 +11,6 @@ int rotate_x = 0;
 int main(int argc, char const *argv[])
 {
   GLFWwindow *window;
-  WGPUBool success = WGPU_TRUE;
 
   if (!glfwInit())
     return -1;
@@ -25,14 +24,12 @@ int main(int argc, char const *argv[])
     return -1;
   }
 
+  // test basic wgpu under glfw
   int platform = glfwGetPlatform();
-  printf("GLFW platform: %d\n", platform);
-
+  printf("GLFW platform: %x\n", platform);
   WGPUInstance instance = wgpuCreateInstance(NULL);
   printf("WGPU instance: %p\n", instance);
   wgpuInstanceRelease(instance);
-
-  printf("WebGPU success: %u\n", success);
 
   glfwMakeContextCurrent(window);
 
