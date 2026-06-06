@@ -7,7 +7,7 @@ include(utils.cmake)
 
 # Dependencies
 if (EMSCRIPTEN)
-  
+
   add_library(glfw INTERFACE)
   target_link_options(glfw INTERFACE -sUSE_GLFW=3)
 
@@ -25,8 +25,8 @@ else (EMSCRIPTEN)
   )
   FetchContent_Declare(
     webgpu
-    URL https://github.com/eliemichel/WebGPU-distribution/archive/refs/tags/main-v0.3.0-alpha.zip
-    URL_HASH MD5=ea1195dc6c7661c36aa13ea5b734b86e
+    URL https://github.com/eliemichel/WebGPU-distribution/archive/refs/tags/wgpu-v24.0.0.2.zip
+    URL_HASH MD5=8497f91384b866ba5bf2458b7281f647
   )
   FetchContent_MakeAvailable(glfw-light webgpu)
 
