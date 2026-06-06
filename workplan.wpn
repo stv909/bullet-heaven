@@ -70,6 +70,8 @@
 				url * https://github.com/gfx-rs/wgpu-native/
 				* удалось настроить билд для examples/triangle
 				* после перетачивания его напильником
+			+ привести в порядок билды и отладки
+				* отдельно билдить приложения, отдельно запускать на отладку
 			. на уровне удобной абстракции
 				* есть первоисточник всей этой истории с glfwGetWGPUSurface
 				url * https://github.com/eliemichel/glfw3webgpu
