@@ -3,14 +3,14 @@
 // For more documentation on how to configure debug tasks,
 // see: https://zed.dev/docs/debugger
 [
-  {
-    "label": "Debug",
-    "build": {
-      "command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
-      "cwd": "$ZED_WORKTREE_ROOT",
-    },
-    "program": "$ZED_WORKTREE_ROOT/build/debug/bullet-heaven",
-    "request": "launch",
-    "adapter": "CodeLLDB",
-  },
+	{
+		"label": "Debug",
+		"build": {
+			"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
+			"cwd": "$ZED_WORKTREE_ROOT/C",
+		},
+		"program": "$ZED_WORKTREE_ROOT/C/build/debug/bullet-heaven",
+		"request": "launch",
+		"adapter": "CodeLLDB",
+	},
 ]
