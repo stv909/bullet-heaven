@@ -1,5 +1,13 @@
 [
 	{
+		"label": "C - Build & Run (Debug)",
+		"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/hello-glfw3webgpu",
+		"cwd": "$ZED_WORKTREE_ROOT/C/examples",
+		"shell": "system",
+		"allow_concurrent_runs": false,
+		"reveal": "always",
+	},
+	{
 		"label": "glwf3opengl - Build & Run (Debug)",
 		"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
 		"cwd": "$ZED_WORKTREE_ROOT/glwf3opengl",
