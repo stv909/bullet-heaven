@@ -6,10 +6,20 @@
 	{
 		"label": "Debug",
 		"build": {
-			"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug && ./build/debug/bullet-heaven",
+			"command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang && cmake --build build/debug",
 			"cwd": "$ZED_WORKTREE_ROOT/C",
 		},
 		"program": "$ZED_WORKTREE_ROOT/C/build/debug/bullet-heaven",
+		"request": "launch",
+		"adapter": "CodeLLDB",
+	},
+	{
+		"label": "Triangle Example Debug",
+		"build": {
+			"command": "cmake -B build -DWGPU_LIBRARY=/usr/local/lib/libwgpu_native.dylib -DCMAKE_BUILD_TYPE=Debug && cmake --build build",
+			"cwd": "$ZED_WORKTREE_ROOT/wgpu-native/examples",
+		},
+		"program": "$ZED_WORKTREE_ROOT/wgpu-native/examples/build/triangle/triangle",
 		"request": "launch",
 		"adapter": "CodeLLDB",
 	},
